@@ -1,11 +1,10 @@
 public class Main {
 
     public static void main(String[] args) {
-        Basket basket = new Basket();
-        basket.print("Milk");
-        basket.add("Milk", 4,3,12.34);
+        Basket basket = new Basket(123);
+        basket.add("Milk", 42,1,12.34);
         basket.add("Bread", 1,2,12.4);
-        basket.add("Meet", 14,1,45.123);
+        basket.add("Meet", 2,134,45.123);
         System.out.println(basket.getTotalWeight());
         System.out.println();
         System.out.println(new Arithmetic(12,44).max());

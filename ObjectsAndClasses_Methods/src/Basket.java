@@ -6,10 +6,12 @@ public class Basket {
     private int limit;
     private int totalWeight=0;
 
+    private boolean error = false;
+
     public Basket() {
         increaseCount(1);
         items = "Список товаров:";
-        this.limit = 1000000000;
+        this.limit = 10000000;
     }
 
     public Basket(int limit) {
@@ -25,6 +27,9 @@ public class Basket {
 
     public void add(String name, int price, int count, double weight){
         add(name,price,count);
+        if(error){
+            return;
+        }
         totalWeight+=(count*weight);
     }
 
@@ -41,7 +46,6 @@ public class Basket {
     }
 
     public void add(String name, int price, int count) {
-        boolean error = false;
         if (contains(name)) {
             error = true;
         }
