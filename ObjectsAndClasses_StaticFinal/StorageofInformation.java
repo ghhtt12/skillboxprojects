@@ -1,11 +1,11 @@
 package ObjectsAndClasses_StaticFinal;
 
 public class StorageofInformation {
-    type type;
+    Type type;
     final int volume;
     final double weight;
 
-    public StorageofInformation(int volume, int weight, type type) {
+    public StorageofInformation(int volume, int weight, Type type) {
         this.volume = volume;
         this.weight = weight;
         this.type = type;

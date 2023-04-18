@@ -1,10 +1,10 @@
 package ObjectsAndClasses_StaticFinal;
-class am {
+class Am {
     final String type;
     final int volume;
     final double weight;
 
-    public am(int volume, int weight, String type) {
+    public Am(int volume, int weight, String type) {
         this.volume = volume;
         this.weight = weight;
         this.type = type;

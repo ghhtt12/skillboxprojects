@@ -2,12 +2,12 @@ package ObjectsAndClasses_StaticFinal;
 
 public class Main {
     public static void main(String[] args){
-        processor processor= new processor(34,12,"intel",456);
-        processor processor1= new processor(344,112,"Amd",46);
-        am am= new am(123,34,"GHH");
-        am am1= new am(12,3,"GHH1");
-        StorageofInformation StorageofInformation=new StorageofInformation(345,56,type.HDD);
-        StorageofInformation StorageofInformation1=new StorageofInformation(35,5,type.SSD);
+        Processor processor= new Processor(34,12,"intel",456);
+        Processor processor1= new Processor(344,112,"Amd",46);
+        Am am= new Am(123,34,"GHH");
+        Am am1= new Am(12,3,"GHH1");
+        StorageofInformation StorageofInformation=new StorageofInformation(345,56, Type.HDD);
+        StorageofInformation StorageofInformation1=new StorageofInformation(35,5, Type.SSD);
         Screen Screen = new Screen(23,45,TypeScreen.IPS);
         Screen Screen1 = new Screen(223,145,TypeScreen.VA);
         Keyboard Keyboard= new Keyboard("ter",true,12);

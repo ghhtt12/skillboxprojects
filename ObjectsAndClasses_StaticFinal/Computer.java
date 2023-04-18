@@ -2,15 +2,15 @@ package ObjectsAndClasses_StaticFinal;
 
 public class Computer {
 
-    private  processor processor;
-    private  am am;
+    private Processor processor;
+    private Am am;
     private StorageofInformation StorageofInformation;
     private Screen Screen;
     public Keyboard Keyboard;
     final String vendor;
     final String name;
 
-    public Computer( processor processor,am am,StorageofInformation StorageofInformation, Screen Screen,Keyboard Keyboard, String vendor, String name) {
+    public Computer(Processor processor, Am am, StorageofInformation StorageofInformation, Screen Screen, Keyboard Keyboard, String vendor, String name) {
         this.processor = processor;
         this.am = am;
         this.StorageofInformation = StorageofInformation;
@@ -24,7 +24,7 @@ public class Computer {
         Keyboard = keyboard;
     }
 
-    public void setProcessor(processor processor) {
+    public void setProcessor(Processor processor) {
         this.processor = processor;
     }
 
@@ -36,7 +36,7 @@ public class Computer {
         StorageofInformation = storageofInformation;
     }
 
-    public void setAm(am am) {
+    public void setAm(Am am) {
         this.am = am;
     }
 
@@ -60,11 +60,11 @@ public class Computer {
         return StorageofInformation;
     }
 
-    public am getAm() {
+    public Am getAm() {
         return am;
     }
 
-    public processor getProcessor() {
+    public Processor getProcessor() {
         return processor;
     }
 

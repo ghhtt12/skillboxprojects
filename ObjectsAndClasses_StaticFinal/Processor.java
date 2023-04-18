@@ -1,12 +1,12 @@
 package ObjectsAndClasses_StaticFinal;
 
-public class processor {
+public class Processor {
     final int frequancy;
     final int cores;
     final String manufactor;
     final double weight;
 
-    public processor(int frequancy, int cores, String manufactor, double weight) {
+    public Processor(int frequancy, int cores, String manufactor, double weight) {
         this.frequancy = frequancy;
         this.cores = cores;
         this.manufactor = manufactor;
