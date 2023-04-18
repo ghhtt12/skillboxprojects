@@ -2,17 +2,26 @@ package ObjectsAndClasses_StaticFinal;
 
 public class Main {
     public static void main(String[] args){
-                Basket basket = new Basket(15556565);
-                System.out.println(Basket.getCountPrice());
-                basket.add("Milk", 42,1,12.34);
-                System.out.println(Basket.getCountPrice());
-                basket.add("Bread", 1,2,12.4);
-                System.out.println(Basket.getCountPrice());
-                basket.add("Meet", 2,134,45.123);
-                System.out.println(Basket.pricetoCount());
-                System.out.println(Basket.pricetoBasketCount());
-                System.out.println(Basket.getCount());
-                System.out.println(Basket.getCountPrice());
-                System.out.println(Basket.getCountItems());
+        processor processor= new processor(34,12,"intel",456);
+        processor processor1= new processor(344,112,"Amd",46);
+        am am= new am(123,34,"GHH");
+        am am1= new am(12,3,"GHH1");
+        StorageofInformation StorageofInformation=new StorageofInformation(345,56,type.HDD);
+        StorageofInformation StorageofInformation1=new StorageofInformation(35,5,type.SSD);
+        Screen Screen = new Screen(23,45,TypeScreen.IPS);
+        Screen Screen1 = new Screen(223,145,TypeScreen.VA);
+        Keyboard Keyboard= new Keyboard("ter",true,12);
+        Keyboard Keyboard1= new Keyboard("er",false,124);
+        Computer Computer=new Computer(processor,am,StorageofInformation,Screen,Keyboard,"djf","ter");
+        System.out.println(Computer.Calculateweight());
+        Computer.print();
+        Computer.setAm(am1);
+        Computer.setKeyboard(Keyboard1);
+        Computer.setProcessor(processor1);
+        Computer.setScreen(Screen1);
+        Computer.setStorageofInformation(StorageofInformation1);
+        System.out.println();
+        System.out.println(Computer.Calculateweight());
+        Computer.print();
     }
 }
